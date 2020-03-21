@@ -2,13 +2,16 @@ https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript
 
 function alphabetPosition(text) {
     text = text.toLowerCase();
-    text = [...text];
-    const alfabet = [``, `a`, `b`, `c`, `d`, `e`, `f`, `g`, `h`, `i`, `j`, `k`, `l`, `m`, `n`, `o`, `p`, `q`, `r`, `s`, `t`, `u`, `w`, `v`, `x`, `y`, `z`];
-    
+        const alfabet = `abcdefghijklmnopqrstuwxyz`;
+
+        // coś takiego wykorzystać: liczby.shift(alfabet.indexOf(el)
+
+    /*
     var liczby = text.map((el) => {
         if (alfabet.indexOf(el) > 0) { liczby.shift(alfabet.indexOf(el)); }
     });
-
+    to działa tylko na tablicach
+*/
     console.log(liczby)
 
     //console.log(text);
