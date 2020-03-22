@@ -3,15 +3,14 @@ https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript
 function alphabetPosition(text) {
     text = text.toLowerCase();
     const alfabet = `abcdefghijklmnopqrstuvwxyz`;
-
     var liczby = ""
+    
     for (let i = 0; i <= text.length; i++) {
         if (alfabet.indexOf(text[i]) >= 0) {
             liczby = liczby + (1 + alfabet.indexOf(text[i]) + " ");
         }
     }
-    
-    console.log(liczby)
+    console.log(liczby.trim())
 }
 
 alphabetPosition("The sunset sets at twelve o' clock.");// "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11")
