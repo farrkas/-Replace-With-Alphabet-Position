@@ -2,14 +2,15 @@ https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript
 
 function alphabetPosition(text) {
     text = text.toLowerCase();
-    const alfabet = `abcdefghijklmnopqrstuwxyz`;
+    const alfabet = `abcdefghijklmnopqrstuvwxyz`;
 
     var liczby = ""
     for (let i = 0; i <= text.length; i++) {
         if (alfabet.indexOf(text[i]) >= 0) {
-            liczby = liczby + (1+alfabet.indexOf(text[i])+" ");
+            liczby = liczby + (1 + alfabet.indexOf(text[i]) + " ");
         }
     }
+    
     console.log(liczby)
 }
 
