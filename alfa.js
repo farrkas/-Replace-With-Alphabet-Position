@@ -2,22 +2,15 @@ https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript
 
 function alphabetPosition(text) {
     text = text.toLowerCase();
-        const alfabet = `abcdefghijklmnopqrstuwxyz`;
+    const alfabet = `abcdefghijklmnopqrstuwxyz`;
 
-        // coś takiego wykorzystać: liczby.shift(alfabet.indexOf(el)
-
-    /*
-    var liczby = text.map((el) => {
-        if (alfabet.indexOf(el) > 0) { liczby.shift(alfabet.indexOf(el)); }
-    });
-    to działa tylko na tablicach
-*/
+    var liczby = ""
+    for (let i = 0; i <= text.length; i++) {
+        if (alfabet.indexOf(text[i]) >= 0) {
+            liczby = liczby + (1+alfabet.indexOf(text[i])+" ");
+        }
+    }
     console.log(liczby)
-
-    //console.log(text);
-    console.log(liczby.join(" "));
-    //return liczby;
-
 }
 
 alphabetPosition("The sunset sets at twelve o' clock.");// "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11")
